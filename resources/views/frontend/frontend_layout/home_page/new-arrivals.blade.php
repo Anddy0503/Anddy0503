@@ -1,5 +1,11 @@
 <section class="section wow fadeInUp new-arriavls">
-    <h3 class="section-title">New Arrivals</h3>
+    <h3 class="section-title">
+        @if (session()->get('language') == 'bangla')
+        নতুন আগমন
+        @else
+        New Arrivals
+        @endif
+    </h3>
     <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
         @php
             $new_arrival_products = App\Models\Product::where('new_arrival',1)->latest()->limit(20)->get();
