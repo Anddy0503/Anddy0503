@@ -29,7 +29,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <h5>Coupon Discount <span class="text-danger">*</span></h5>
+                                <h5>Coupon Discount (%) <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                     <input type="number" name="coupon_discount" class="form-control" required="" data-validation-required-message="This field is required"> <div class="help-block"></div>
                                 </div>
@@ -40,7 +40,7 @@
                             <div class="form-group">
                                 <h5>Coupon Validity <span class="text-danger">*</span></h5>
                                 <div class="controls">
-                                    <input type="date" name="coupon_validity" class="form-control" required="" data-validation-required-message="This field is required"> <div class="help-block"></div>
+                                    <input type="date" name="coupon_validity" class="form-control" required="" min="{{ Carbon\Carbon::now()->format('Y-m-d') }}" data-validation-required-message="This field is required"> <div class="help-block"></div>
                                 </div>
                                 @error('coupon_validity')
                                     <span class="alert text-danger">{{ $message }}</span>
