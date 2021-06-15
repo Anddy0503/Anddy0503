@@ -19,7 +19,7 @@ class CreateBrandsTable extends Migration
             $table->string('brand_name_bn');
             $table->string('brand_slug_en');
             $table->string('brand_slug_bn');
-            $table->string('brand_image');
+            $table->string('brand_image')->nullable()->default('default.jpg');
             $table->timestamps();
         });
     }
