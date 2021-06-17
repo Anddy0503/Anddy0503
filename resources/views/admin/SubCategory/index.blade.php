@@ -24,9 +24,9 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th>#</th>
-                                                    <th>Category Name</th>
                                                     <th>SubCategory Name EN</th>
                                                     <th>SubCategory Name BN</th>
+                                                    <th>Category Name</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -34,9 +34,9 @@
                                                 @foreach ($subCategories as $item)
                                                 <tr role="row" class="odd">
                                                     <td>{{ $loop->index+1 }}</td>
-                                                    <td>{{ $item->category->category_name_en }}</td>
                                                     <td class="sorting_1">{{ $item->subcategory_name_en }}</td>
                                                     <td>{{ $item->subcategory_name_bn }}</td>
+                                                    <td>{{ $item->category->category_name_en }}</td>
                                                     <td>
                                                         <div class="input-group">
                                                             <a href="{{ route('subcategories.edit', $item) }}" class="btn btn-info" title="Edit Data"><i class="fa fa-pencil"></i></a>
