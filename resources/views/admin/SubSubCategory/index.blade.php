@@ -3,6 +3,7 @@
 @section('dashboard_content')
     @include('admin.dashboard_layout.breadcrumb', [
     'name' => 'Sub-SubCategory',
+    'url' => "subsubcategories.index",
     'section_name' => 'All Sub-SubCategory'
     ])
     <section class="content">
