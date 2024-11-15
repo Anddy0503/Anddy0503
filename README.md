@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Anddy0503
 - 👀 I’m interested in Web Developing and Web Design
 - 🌱 I’m currently learning MEARN and Figma
-- 💞️ I’m looking to collaborate on a great team
+- 💞️ I’m looking to collaborate on a great team or great persons
 - 📫 How to reach me: AnddyLin0503@gmail.com
 
 <!---
